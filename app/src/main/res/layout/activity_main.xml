@@ -25,7 +25,9 @@
             android:textStyle="bold" />
 
         <TextView
-            style="@style/TodoSubtitle"
+            android:textAllCaps="true"
+            android:textColor="@color/subtitle_text"
+            android:layout_marginHorizontal="32dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/category" />
@@ -36,7 +38,9 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            style="@style/TodoSubtitle"
+            android:textAllCaps="true"
+            android:textColor="@color/subtitle_text"
+            android:layout_marginHorizontal="32dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
