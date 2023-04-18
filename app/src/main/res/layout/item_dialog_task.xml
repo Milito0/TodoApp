@@ -2,6 +2,8 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="250dp"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
     android:background="@color/background_app"
     android:orientation="vertical">
 
@@ -23,7 +25,7 @@
             android:id="@+id/rbBusiness"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/business_category"
+            app:buttonTint="@color/business_category"
             android:checked="true"
             android:text="@string/business"
             android:textColor="@color/white" />
@@ -32,7 +34,7 @@
             android:id="@+id/rbPersonal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/personal_category"
+            app:buttonTint="@color/personal_category"
             android:text="@string/personal"
             android:textColor="@color/white" />
 
@@ -40,11 +42,18 @@
             android:id="@+id/rbOther"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/other_category"
+            app:buttonTint="@color/other_category"
             android:text="@string/other"
             android:textColor="@color/white" />
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_add_task"
+        android:backgroundTint="@color/accent"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
